@@ -21,6 +21,7 @@ if ask == 'v':
     path = "C:Downloads"
     quality = input('Please Enter the Quality you want - h for High Qualiy, l for Low Qualiy : ')
     if quality == 'h':
+        print(f'Your Video {video.title} is Downloading ....\n -----------------------------------')
         print('Video is Downloading....\n -----------------------------------')    
         video.streams.get_highest_resolution().download(output_path=path)
         video.register_on_progress_callback(downloading(video.streams.get_lowest_resolution().resolution))
