@@ -19,7 +19,7 @@ if ask == 'v':
     from pytube import YouTube
     link = input('Please enter the video URL : ')
     video = YouTube(link)
-    stuff_in_string = f"C:\Users\{username}\Downloads"
+    stuff_in_string = f"C:\Users\maham\Downloads"
     video.streams.get_lowest_resolution().download(output_path=stuff_in_string)
     video.register_on_progress_callback(downloading(video.streams.get_lowest_resolution().resolution))
     video.register_on_complete_callback(finish())
