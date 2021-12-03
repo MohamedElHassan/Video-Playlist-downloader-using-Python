@@ -1,7 +1,6 @@
 import os
-username = os.getlogin()
 def finish():
-    print('Download Completed, Enjoy My Friend\n -----------------------------------')
+    print('Download Completed😊, Enjoy My Friend, You will find it in Downloads❤️\n -----------------------------------')
 
 def downloading(resolution):
     print('\n -----------------------------------')
@@ -41,6 +40,7 @@ elif ask == 'p':
     count = 2
     quality = input('Please Enter the Quality you want - h for High Qualiy, l for Low Qualiy : ')
     if quality == 'h':
+        print(f'Your playlist {playlist.title} is Downloading ....\n -----------------------------------')
         print(f'Video Number 1 is Downloading....\n -----------------------------------')
         dir = os.path.join("C:","Downloads",f"{playlist.title}")
         if not os.path.exists(dir):
@@ -51,6 +51,7 @@ elif ask == 'p':
             count += 1
             
     elif quality == 'l':
+        print(f'Your playlist {playlist.title} is Downloading😊 ....\n -----------------------------------')
         print(f'Video Number 1 is Downloading....\n -----------------------------------')
         dir = os.path.join("C:","Downloads",f"{playlist.title}")
         if not os.path.exists(dir):
